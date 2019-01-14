@@ -1,0 +1,13 @@
+<%include ../partials/header.ejs%>
+<div class="container ">
+<h1>Add new comment <%=campground.name%></h1>
+
+<form action="/campgrounds/<%=campground._id%>/comments" method="POST">
+    <input class="form-control" type="text" name="comment[text]" placeholder="comment">
+    
+    
+    <button class="btn btn-lg btn-default">Submit!!</button>
+</form>
+</div>
+<%include ../partials/footer.ejs%>
+  
